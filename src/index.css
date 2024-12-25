@@ -11,3 +11,137 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* .container1{
+  border: 1px solid black;
+  height: 650px;
+  width: 1100px;
+  margin-top: 90px;
+}
+.icon{
+  font-size: 20px;
+  margin-left: 900px;
+}
+ .nam{
+  margin-top: -100px;
+
+ }
+ .butn{
+  margin-top: -34px;
+ }
+
+ .box1{
+  margin-top: 20px;
+  margin-left: 90px;
+  border: 1px solid rgb(147, 161, 175);
+  height: 100px;
+  width: 400px;
+ }
+ .box2{
+  margin-top: 20px;
+  margin-left: 90px;
+  border: 1px solid rgb(147, 161, 175);
+  height: 100px;
+  width: 400px;
+ }
+ .analytics{
+  border: 1px solid black;
+  height: 200px;
+  width: 1100px;
+  margin-left: 50px;
+ }
+.circale{
+  height: 150px;
+  background-color: #A0B4B7;
+}
+ */
+img{
+  height: 200px;
+  width: 200px;
+}
+ .card1{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card .title{
+ font-family: "Dancing Script"
+}
+.card p {
+font-family: "Caramel"
+}
+.card{
+  margin: 130px;
+}
+
+.container1{
+  /* border: 2px solid black; */
+  background-image:url();
+  margin-top: 50px;
+  border: 1px solid black;
+  height: 650px;
+  width: 1050px;
+  padding: 30px;
+  margin-left: 100px;
+}
+.box{
+  height: 200px;
+}
+.mainbox{
+  height: 100px;
+  width: 100px;
+}
+.mainbox img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+}
+.box3{
+  border: 1px solid black;
+  height: 100px;
+  width: 400px;
+}
+
+.box4{
+  border: 1px solid black;
+  height: 100px;
+  width: 400px;
+}
+.box5{
+border: 1px solid black;
+height: 200px;
+width: 1050px;
+margin-left: 101px;
+}
+
+
+.box6{
+border: 1px solid black;
+height: 300px;
+width: 1050px;
+margin-left: 100px;
+}
+.icon1{
+  margin-left: 900px;
+  font-size: 25px;
+}
+
+
+.box7{
+border: 2px solid black;
+height: 115px;
+width: 1200px;
+margin-left: 111px;
+margin-top: 51px;
+}
+.box8{
+border: 2px solid black;
+height: 125px;
+width: 1200px;
+margin-left: 111px;
+margin-top: 44px;
+}
+.viewsprofile{
+margin-right: 120px;
+}
+
+
