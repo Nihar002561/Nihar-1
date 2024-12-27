@@ -1,7 +1,22 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
 
 function MainProfile() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('userData');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
+  if (!user) {
+    return <p>Loading profile...</p>;
+  }
+
+
   return (
     <div className='Profilepage'>
     <div className="container1 rounded-3 ">
@@ -10,11 +25,11 @@ function MainProfile() {
           <img src="https://st2.depositphotos.com/1537427/5859/v/950/depositphotos_58597599-stock-illustration-male-user-icon.jpg" alt="" />
         </div>
         <div className="name ps-4">
-          <h4 className="pt-5 mt-5 ">Nainesh Gevariya</h4>
+          <h4 className="pt-5 mt-5 ">{user.Firstname} {user.Lastname}</h4>
           <h6 className="professon pe-1 ">
-            full stack developer and software developer{" "}
+            {user.Occupation}
           </h6>
-          <p>Surat,gujarat,india</p>
+          <p>{user.City}</p>
         </div>
       </div>
       <div className="buttons mt-3 ms-4">
@@ -85,7 +100,16 @@ function MainProfile() {
                         <i class="fa-solid fa-pen"></i> 
                     </Link>
                 </div>
-          </div>
+                <h4 className='ms-4 '>Experience</h4>
+                    <div className='addex d-flex'>
+                    <img className='jbslogo' src="https://media.licdn.com/dms/image/v2/D560BAQHC-AodjEBCXQ/company-logo_200_200/company-logo_200_200/0/1713852936740/jbs_it_institute_logo?e=2147483647&v=beta&t=supf_7CjIWYNp80zYUodL6hbf9DPW6j6xrTu9I1G1AE" alt="" />                    
+                          <div className='adex'>
+                          <h6 className='mt-3'>Full-stack-Devloper</h6>
+                          <p className=''>JBS IT INSTITUTE .intership</p>
+                          <p className='present text-secondary'>Jan 2024 - Present . 1 yr</p>
+                          </div>
+                      </div>
+                    </div>
 
     </div>
   )

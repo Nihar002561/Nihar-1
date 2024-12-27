@@ -8,6 +8,8 @@ import Home from "./Homepage/Home"
 import MainProfile from "./Pages/MainProfile";
 import Experienceplus from "./Pages/Experienceplus";
 import Experienceedit from "./Pages/Experienceedit";
+import Home1 from "./Example/Home1";
+import Profile1 from "./Example/Profile1";
 
 
 function App() {
@@ -22,8 +24,10 @@ function App() {
       <Route path="/mainprofile" element={<MainProfile/>} />
       <Route path="/experience-plus" element={<Experienceplus/>} />
       <Route path="/experience-edit" element={<Experienceedit/>} />
-
+      <Route path="/home1" element={<Home1/>} />
+      <Route path="/profile1" element={<Profile1/>} />
     </Routes>
+
   
     {/* <Profile/> */}
     {/* <Home/> */}

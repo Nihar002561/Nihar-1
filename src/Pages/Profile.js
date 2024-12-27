@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 function Profile() {
@@ -14,10 +14,14 @@ function Profile() {
         Gender: "",
         City: "",
     })
+    const navigate = useNavigate();
 
-    function handleSubmit(){
-        console.log(user);
-    }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('User Data:', user);
+        localStorage.setItem('userData', JSON.stringify(user));
+        navigate('/mainprofile');
+      };
 
     function handlechange(e){
         const {name, value} = e.target
@@ -27,7 +31,7 @@ function Profile() {
   
 
   return (
-    <form className="container col-md-6 border border-black p-5 " noValidate>
+    <form className="container col-md-6 border border-black p-5 " >
         <h3 className='container col-md-6 text-primary'>Create Linkedin Profile</h3>
         {/* <img src="https://static.vecteezy.com/system/resources/previews/045/944/199/non_2x/male-default-placeholder-avatar-profile-gray-picture-isolated-on-background-man-silhouette-picture-for-user-profile-in-social-media-forum-chat-greyscale-illustration-vector.jpg" style={{width: '18rem'}} className="card-img-top border border-dark-subtle border-2" alt="..." /> */}
         <div className="col-md-6">
